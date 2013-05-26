@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IAViewController : UIViewController
+@interface IAViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+//@class IAViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) NSMutableArray *tasks;
 
 @end
